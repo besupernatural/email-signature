@@ -1,0 +1,52 @@
+html,
+body {
+  background-color: #fafafa;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+label,
+input {
+  display: block;
+}
+
+input {
+  font-size: inherit;
+}
+
+button {
+  font-size: 18px
+}
+
+.preview-block {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background-color: white;
+  padding: 20px 5px;
+}
+
+.dark-bg {
+  background-color: #0e0e0e;
+  color: #eee;
+}
+
+.muted {
+  color: #999;
+}
+
+.hidden {
+  display: none;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
