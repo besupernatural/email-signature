@@ -4,26 +4,49 @@ body {
 }
 
 body {
+  --base-font-size: 16px;
+  --input-font-size: 20px;
+  --button-font-size: 20px;
+
   margin: 0;
   padding: 20px;
-  font-size: 16px;
+  font-size: var(--base-font-size);
 }
 
-hr {
-  margin: 50px 0;
+.container {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+
+.panel-input {
+  width: 200px;
+}
+
+.panel-preview {
+  flex: 1;
 }
 
 label,
-input {
+input,
+button {
+  box-sizing: border-box;
   display: block;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 input {
-  font-size: inherit;
+  font-size: var(--input-font-size);
+  padding: 3px;
 }
 
 button {
-  font-size: 18px
+  font-size: var(--button-font-size);
+  padding: 10px 20px;
 }
 
 .preview-block {
@@ -43,10 +66,25 @@ button {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .my-20 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.input-help {
+  display: block;
+  margin-top: 5px;
+}
+
+.copy-confirmation {
+  color: green;
+  display: block;
+  margin-top: 5px;
 }

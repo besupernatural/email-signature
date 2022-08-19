@@ -13,36 +13,41 @@
 <body>
   <main>
     <h1>Email Signature</h1>
-    <section>
-      <h2>Input</h2>
-      <form id="signature-form">
-        <p>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" value="Peter Parker" />
-        </p>
-        <p>
-          <label for="title">Title:</label>
-          <input type="text" id="title" name="title" value="Spider-Man" />
-        </p>
-        <p>
-          <label for="phone">Phone:</label>
-          <input type="text" id="phone" name="phone" value="555.555.5555" />
-          <span class="muted">Format as 555.555.5555</span>
-        </p>
-      </form>
-    </section>
 
-    <hr />
 
-    <section>
-      <h2>Preview</h2>
-      <p>
-        <button id="copy-btn">Copy code</button>
-        <span class="copy-confirmation hidden">Copied to clipboard!</span>
-      </p>
-      <div class="preview-block my-20" data-copy-src></div>
-      <div class="preview-block dark-bg my-20"></div>
-    </section>
+
+    <div class="container">
+      <section class="panel panel-input">
+        <h2>Input</h2>
+        <form id="signature-form">
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Peter Parker" />
+          </p>
+          <p>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Spider-Man" />
+          </p>
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" value="555.555.5555" />
+            <span class="muted input-help">Format as 555.555.5555</span>
+          </p>
+        </form>
+
+        <p class="mt-40">
+          <button id="copy-btn">Copy signature</button>
+          <span class="copy-confirmation hidden">Copied to clipboard!</span>
+        </p>
+      </section>
+
+      <section class="panel panel-preview">
+        <h2>Preview</h2>
+        <div class="preview-block my-20" data-copy-src></div>
+        <div class="preview-block dark-bg my-20"></div>
+      </section>
+
+    </div>
   </main>
 
   <script type="text/template" id="sig-tmpl">
