@@ -14,8 +14,6 @@
   <main>
     <h1>Email Signature</h1>
 
-
-
     <div class="container">
       <section class="panel panel-input">
         <h2>Input</h2>
@@ -43,33 +41,58 @@
 
       <section class="panel panel-preview">
         <h2>Preview</h2>
-        <div class="preview-block my-20" data-copy-src></div>
-        <div class="preview-block dark-bg my-20"></div>
+        <h3>Light background</h3>
+        <div class="preview-block my-20">
+          <p class="mock-message">
+            Fake email message content. Morbi fermentum tortor odio, at
+            vulputate tellus sodales id. Nunc at lobortis magna. Cras a
+            ultrices eros, pretium luctus ligula. Aliquam erat volutpat. Sed
+            in feugiat eros, in sollicitudin justo.
+          </p>
+          <div class="sig-target" data-copy-src></div>
+        </div>
+        <h3>Dark background</h3>
+        <div class="preview-block dark-bg my-20">
+          <p class="mock-message">
+            Fake email message content. Morbi fermentum tortor odio, at
+            vulputate tellus sodales id. Nunc at lobortis magna. Cras a
+            ultrices eros, pretium luctus ligula. Aliquam erat volutpat. Sed
+            in feugiat eros, in sollicitudin justo.
+          </p>
+          <div class="sig-target"></div>
+        </div>
       </section>
-
     </div>
   </main>
 
   <script type="text/template" id="sig-tmpl">
-    <div class="email-signature">
-      <p style="margin-top: 0; margin-bottom: 20px;">
-        <a href="https://www.besupernatural.com/?utm_source=logo_link&utm_medium=email&utm_campaign=spn_email_signature" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none;"><img src="https://besupernatural.github.io/email-signature/spn-wordmark-165x46.png" width="165" height="46" alt="Supernatural wordmark" style="display: block; width: 165px; height: 46px;"></a>
-      </p>
-      <p style="margin-top: 0; margin-bottom: 20px; padding-left: 5px; padding-right: 5px;">
-        <span style="font-family: Times, 'Times New Roman', serif; font-size: 20px; line-height: 26px;">$name</span>
-        <br />
-        <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 26px;"">$title</span>
-        <br />
-        <span style="font-family: Times, 'Times New Roman', serif; font-size: 20px; line-height: 26px;">$phone</span>
-      </p>
-      <p style="margin-top: 0; margin-bottom: 0; padding-left: 5px; padding-right: 5px;">
-        <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px; line-height: 26px;">
-          <a href="https://www.besupernatural.com/?utm_source=text_link&utm_medium=email&utm_campaign=spn_email_signature" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
-            besupernatural.com
-          </a>
-        </span>
-      </p>
-    </div>
+      <table class="email-signature" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;">
+        <tbody>
+        <tr>
+        <td style="padding: 10px; border: 1px solid #eee; background-color: white; color: black; line-height: 26px;">
+          <p style="margin-top: 0; margin-bottom: 15px;">
+            <a href="https://www.besupernatural.com/?utm_source=logo_link&utm_medium=email&utm_campaign=spn_email_signature" target="_blank" rel="noopener noreferrer" style="display: inline-block; text-decoration: none;">
+              <img src="https://besupernatural.github.io/email-signature/spn-wordmark-132x30.png" width="132" height="30" alt="Supernatural wordmark" style="display: block; width: 132px; height: 30px;">
+            </a>
+          </p>
+          <p style="margin-top: 0; margin-bottom: 15px;">
+            <span style="font-family: Times, 'Times New Roman', serif; font-size: 20px;">$name</span>
+            <br />
+            <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px;">$title</span>
+            <br />
+            <span style="font-family: Times, 'Times New Roman', serif; font-size: 20px;">$phone</span>
+          </p>
+          <p style="margin-top: 0; margin-bottom: 0;">
+            <span style="font-family: Helvetica, Arial, sans-serif; font-size: 18px;">
+              <a href="https://www.besupernatural.com/?utm_source=text_link&utm_medium=email&utm_campaign=spn_email_signature" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: underline;">
+                besupernatural.com
+              </a>
+            </span>
+          </p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
     </script>
 </body>
 

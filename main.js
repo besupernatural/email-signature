@@ -23,7 +23,7 @@
     html = html.replace(/\$title/g, $title);
     html = html.replace(/\$phone/g, $phone);
 
-    const previewEls = document.querySelectorAll('.preview-block');
+    const previewEls = document.querySelectorAll('.preview-block .sig-target');
 
     previewEls.forEach((el) => {
       el.innerHTML = html;
